@@ -107,7 +107,7 @@ app.post('/read-image', upload.single('image'), async (req, res) => {
         const base64 = req.file.buffer.toString('base64');
 
         const payload = {
-            model: 'gpt-4o-mini',
+            model: 'gpt-4o',
             temperature: 0,
             messages: [
                 {
