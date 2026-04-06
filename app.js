@@ -120,6 +120,9 @@ app.post('/read-image', upload.single('image'), async (req, res) => {
                         {
                             type: 'text',
                             text: `
+                            Antes de processar a imagem, verifique se o texto (letras e números) está alinhado horizontalmente. 
+Se o texto estiver inclinado ou girado, rotacione a imagem até que o texto fique perfeitamente horizontal. 
+Depois que estiver alinhado, extraia todos os caracteres alfanuméricos da imagem. 
                                 Leia a imagem e retorne APENAS JSON válido.
                                 Formato obrigatório:
                                 [
