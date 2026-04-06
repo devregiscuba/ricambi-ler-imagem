@@ -134,9 +134,8 @@ Extraia TODO texto e TODOS números, considerando que na imagem pode conter codi
                                 - NÃO inclua texto explicativo
                                 - se não houver quantity, usar 1
                                 - Ignore qualquer texto que não seja produto
-                                - pode ser que o partnumber tenha / e pode confundir com o numero 1
-                                - partnumber nao tem ponto(.) ou virgua(,)
-                                - geralmente a quantity na imagem fica na primeira ou ultima coluna separada
+                                - Partnumber nao tem ponto(.) ou virgua(,)
+                                - Geralmente a quantity na imagem, fica isolada antes ou depois do Partnumber 
                                  - Ignore qualquer palavra, exemplo: "1 - sangria - 74RD7899E" deve ignorar 'sangria' pq é uma palavra, ou seja, se houver 3 letras consecutivas pode ignorar a palavra ficando quantidade 1 e partnumber 74RD7899E.
                                 `
                         },
