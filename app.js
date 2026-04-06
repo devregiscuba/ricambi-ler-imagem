@@ -134,6 +134,8 @@ Extraia TODO texto e TODOS números, considerando que na imagem pode conter codi
                                 - NÃO inclua texto explicativo
                                 - se não houver quantity, usar 1
                                 - Ignore qualquer texto que não seja produto
+                                - pode ser que o partnumber tenha / e pode confundir com o numero 1
+                                - Ignore qualquer caracter que não seja numeros, letras e - ou /
                                  - Ignore qualquer palavra, exemplo: "1 - sangria - 74RD7899E" deve ignorar 'sangria' pq é uma palavra, ou seja, se houver 3 letras consecutivas pode ignorar a palavra ficando quantidade 1 e partnumber 74RD7899E.
                                 `
                         },
