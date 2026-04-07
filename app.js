@@ -100,11 +100,11 @@ app.post('/generation-image', upload.array('image', 2), async (req, res) => {
 ===================== */
 app.post('/read-image', upload.single('image'), async (req, res) => {
     try {
-        if (!req.file) {
+        if (!req.base64) {
             return res.status(400).json({ error: 'Envie uma imagem' });
         }
 
-        const base64 = req.file.buffer.toString('base64');
+        const base64 = req.base64.buffer.toString('base64');
 
         const payload = {
             model: 'gpt-4o',
